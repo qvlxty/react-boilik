@@ -4,9 +4,6 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const webpack = require('webpack')
 require('dotenv').config()
 
-// eslint-disable-next-line no-new
-new webpack.EnvironmentPlugin(['BACKEND_HOST'])
-
 module.exports = {
   entry: path.join(__dirname, './src/index.tsx'),
   output: {
@@ -50,6 +47,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.EnvironmentPlugin([
+      'BACKEND_HOST',
+    ]),
     new ForkTsCheckerWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
