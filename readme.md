@@ -8,7 +8,7 @@
 
 ## Используемые пакеты
 
-- React 16.9.x
+- React 17
 - Typescript 
 - Webpack 4
 - Babel  
