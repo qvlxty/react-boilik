@@ -1,0 +1,34 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    }
+  },
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/proposal-class-properties",
+    "@effector/babel-plugin",
+    "@effector/babel-plugin-react",
+    "babel-plugin-styled-components",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@": "./src",
+        }
+      }
+    ]
+  ]
+}
