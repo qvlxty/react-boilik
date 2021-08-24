@@ -14,7 +14,8 @@ module.exports = {
     },
   },
   rules: {
-    semi: [2, 'never'],
+    'no-useless-catch': 0,
+    'import/no-cycle': 0,
     'no-plusplus': 0,
     'import/prefer-default-export': 0,
     'no-continue': 0,
@@ -37,7 +38,8 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react-hooks', 'import'],
 
   extends: [
-    'airbnb',
+    "eslint:recommended",
+    "plugin:react/recommended",
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
   ],

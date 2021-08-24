@@ -12,15 +12,13 @@
   "env": {
     "development": {
       "plugins": [
-        "react-hot-loader/babel"
-      ]
+        "react-hot-loader/babel",
+      ],
     }
   },
   "plugins": [
     "@babel/plugin-transform-runtime",
     "@babel/proposal-class-properties",
-    "@effector/babel-plugin",
-    "@effector/babel-plugin-react",
     "babel-plugin-styled-components",
     [
       "module-resolver",
@@ -30,5 +28,5 @@
         }
       }
     ]
-  ]
+  ],
 }
