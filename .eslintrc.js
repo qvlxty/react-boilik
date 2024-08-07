@@ -14,6 +14,9 @@ module.exports = {
     },
   },
   rules: {
+    'semi': [2, 'never'],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'quotes': [2, 'single'],
     'no-useless-catch': 0,
     'import/no-cycle': 0,
     'no-plusplus': 0,
@@ -36,7 +39,6 @@ module.exports = {
     'max-classes-per-file': 'warn',
   },
   plugins: ['@typescript-eslint', 'react-hooks', 'import'],
-
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
