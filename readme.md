@@ -1,19 +1,19 @@
-# ⚛ React Typescript Boilik v2.0.0
+# ⚛ React Typescript Boilik
 
 Бойлерплейт для быстрого старта разработки на стеке react/effector/styled-components.
 
 ## Package out of box
 
 ### Для разработки
-- ⚛ React 18.3.1
+- ⚛ React v19
 - ☄️ Effector v23
-- 💅 StyledComponents v6.1
-- react-router v6
+- 💅 StyledComponents v6
+- react-router v7.9
 
 ### Для сборки / рантайма
-- Webpack v5.93
-- Typescript 5.5
-- Babel 7.20
+- Webpack v5
+- Typescript 5
+- Babel 7
 
 ## Скрипты
 
